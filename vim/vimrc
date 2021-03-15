@@ -9,7 +9,12 @@ call vundle#begin()
 " Let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Plugins
+Plugin 'pangloss/vim-javascript'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
+Plugin 'styled-components/vim-styled-components'
 
 " All Plugins must be above this line
 call vundle#end()
