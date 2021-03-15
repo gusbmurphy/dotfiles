@@ -34,5 +34,7 @@ set wildmenu
 nmap j gj
 nmap k gk
 
+" Enable syntax highlighting
+syntax enable
 " CoC configuration
 let g:coc_global_extensions = ['coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-styled-components']
