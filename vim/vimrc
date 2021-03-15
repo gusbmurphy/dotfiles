@@ -29,5 +29,10 @@ set wildignore+=**/node_modules/**
 
 " Enable nice menu for tab completion file names
 set wildmenu
+
+" Move up and down by visible lines if current line is wrapped
+nmap j gj
+nmap k gk
+
 " CoC configuration
 let g:coc_global_extensions = ['coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-styled-components']
