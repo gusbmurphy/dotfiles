@@ -36,5 +36,10 @@ nmap k gk
 
 " Enable syntax highlighting
 syntax enable
+
+" Rapid editing of Vimrc
+nmap <leader>vr :sp $MYVIMRC<cr>
+nmap <leader>so :source $MYVIMRC<cr>
+
 " CoC configuration
 let g:coc_global_extensions = ['coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-styled-components']
