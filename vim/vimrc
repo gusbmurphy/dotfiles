@@ -34,6 +34,11 @@ set wildmenu
 nmap j gj
 nmap k gk
 
+" Configure indentation
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 " Enable syntax highlighting
 syntax enable
 
