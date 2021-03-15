@@ -1,0 +1,11 @@
+" Both required for Vundle 
+set nocompatible
+filetype off
+" Set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" Let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" All Plugins must be above this line
+call vundle#end()
+filetype plugin indent on
