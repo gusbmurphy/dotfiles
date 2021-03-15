@@ -45,6 +45,9 @@ syntax enable
 " Keep at least 4 lines below cursor
 set scrolloff=4
 
+" Set relative line numbering with absolute number for current line
+set number relativenumber
+
 " Rapid editing of Vimrc
 nmap <leader>vr :sp $MYVIMRC<cr>
 nmap <leader>so :source $MYVIMRC<cr>
