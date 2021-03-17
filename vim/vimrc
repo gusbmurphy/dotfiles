@@ -15,10 +15,14 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'styled-components/vim-styled-components'
+Plugin 'arcticicestudio/nord-vim'
 
 " All Plugins must be above this line
 call vundle#end()
 filetype plugin indent on
+
+" Set 'nord' color scheme
+colorscheme nord
 
 " Search down into subfolders
 " Provide tab-completion for all file-related tasks
