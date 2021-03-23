@@ -17,13 +17,14 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'styled-components/vim-styled-components'
 Plugin 'arcticicestudio/nord-vim'
+Plugin 'dracula/vim', {'name': 'dracula'}
 
 " All Plugins must be above this line
 call vundle#end()
 filetype plugin indent on
 
-" Set 'nord' color scheme
-colorscheme nord
+" Set color scheme
+colorscheme dracula
 
 " Search down into subfolders
 " Provide tab-completion for all file-related tasks
