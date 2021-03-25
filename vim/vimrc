@@ -18,6 +18,7 @@ Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'styled-components/vim-styled-components'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'dracula/vim', {'name': 'dracula'}
+Plugin 'itchyny/lightline.vim'
 
 " All Plugins must be above this line
 call vundle#end()
@@ -25,6 +26,9 @@ filetype plugin indent on
 
 " Set color scheme
 colorscheme dracula
+
+" Hide default status line
+set noshowmode
 
 " Search down into subfolders
 " Provide tab-completion for all file-related tasks
