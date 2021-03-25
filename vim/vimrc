@@ -40,6 +40,10 @@ set wildignore+=**/node_modules/**
 " Enable nice menu for tab completion file names
 set wildmenu
 
+" To get Dracula colors in iTerm2
+set termguicolors
+let g:dracula_colorterm = 0
+
 " Move up and down by visible lines if current line is wrapped
 nmap j gj
 nmap k gk
