@@ -19,6 +19,9 @@ Plugin 'styled-components/vim-styled-components'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'dracula/vim', {'name': 'dracula'}
 Plugin 'itchyny/lightline.vim'
+Plugin 'Vimjas/vim-python-pep8-indent'
+Plugin 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
+Plugin 'vim-python/python-syntax'
 
 " All Plugins must be above this line
 call vundle#end()
@@ -39,6 +42,9 @@ set wildignore+=**/node_modules/**
 
 " Enable nice menu for tab completion file names
 set wildmenu
+
+" Let vim-python/python-syntax do its thing
+let g:python_highlight_all = 1
 
 " To get Dracula colors in iTerm2
 set termguicolors
@@ -68,6 +74,7 @@ nmap <leader>so :source $MYVIMRC<cr>
 
 " CoC configuration
 let g:coc_global_extensions = ['coc-react-refactor', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-styled-components']
+let g:coc_global_extensions = ['coc-json', 'coc-react-refactor', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-styled-components', 'coc-python']
 
 " CoC actions
 nmap <leader>a <Plug>(coc-codeaction)
