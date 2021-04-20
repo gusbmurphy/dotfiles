@@ -23,6 +23,12 @@ Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
 Plugin 'vim-python/python-syntax'
 
+if has('nvim') || has('patch-8.0.902')
+  Plugin 'mhinz/vim-signify'
+else
+  Plugin 'mhinz/vim-signify', { 'branch': 'legacy' }
+endif
+
 " All Plugins must be above this line
 call vundle#end()
 filetype plugin indent on
