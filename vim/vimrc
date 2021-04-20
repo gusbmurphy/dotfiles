@@ -93,6 +93,11 @@ let g:coc_global_extensions = [
 " CoC actions
 nmap <leader>a <Plug>(coc-codeaction)
 nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>cr <Plug>(coc-references)
+nmap <leader>cd :call CocAction('jumpDefinition', 'drop')<cr>
+" Jump between ESLint warnings
+nmap ]w <Plug>(coc-diagnostic-next)
+nmap [w <Plug>(coc-diagnostic-prev)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call <SID>show_documentation()<CR>
