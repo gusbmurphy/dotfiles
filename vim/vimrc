@@ -21,6 +21,8 @@ Plugin 'dracula/vim', {'name': 'dracula'}
 Plugin 'itchyny/lightline.vim'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
+Plugin 'preservim/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-python/python-syntax'
 
 if has('nvim') || has('patch-8.0.902')
