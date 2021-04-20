@@ -34,7 +34,12 @@ call vundle#end()
 filetype plugin indent on
 
 " Set color scheme
+" Set color scheme(s)
 colorscheme dracula
+let g:lightline = {
+  \ 'colorscheme': 'dracula',
+  \ }
+
 " Disable holding movement keys
 :noremap hh <nop>
 :noremap jj <nop>
