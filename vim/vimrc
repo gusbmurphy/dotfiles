@@ -80,6 +80,15 @@ nmap <leader>so :source $MYVIMRC<cr>
 " CoC configuration
 let g:coc_global_extensions = ['coc-react-refactor', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-styled-components']
 let g:coc_global_extensions = ['coc-json', 'coc-react-refactor', 'coc-prettier', 'coc-eslint', 'coc-tsserver', 'coc-styled-components', 'coc-python']
+let g:coc_global_extensions = [
+      \ 'coc-json',
+      \ 'coc-react-refactor',
+      \ 'coc-prettier',
+      \ 'coc-eslint',
+      \ 'coc-tsserver',
+      \ 'coc-styled-components',
+      \ 'coc-python'
+      \ ]
 
 " CoC actions
 nmap <leader>a <Plug>(coc-codeaction)
