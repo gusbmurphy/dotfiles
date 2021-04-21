@@ -10,9 +10,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
+Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'yuezk/vim-js'
-Plugin 'pangloss/vim-javascript'
-Plugin 'leafgarland/typescript-vim'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'styled-components/vim-styled-components'
@@ -35,10 +34,15 @@ endif
 call vundle#end()
 filetype plugin indent on
 
+" Enable colorful mode for JSX syntax highlighting
+let g:vim_jsx_pretty_colorful_config = 1
+
 " Set color scheme(s)
 set background=dark
 colorscheme oceanic_material
 
+" Use new regular expression engine so that syntax highlighting in TS works
+set re=0
 
 " Hide default status line
 set noshowmode
