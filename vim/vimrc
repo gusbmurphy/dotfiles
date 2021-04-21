@@ -17,13 +17,13 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'styled-components/vim-styled-components'
 Plugin 'arcticicestudio/nord-vim'
-Plugin 'dracula/vim', {'name': 'dracula'}
 Plugin 'itchyny/lightline.vim'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
 Plugin 'preservim/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-python/python-syntax'
+Plugin 'glepnir/oceanic-material'
 
 if has('nvim') || has('patch-8.0.902')
   Plugin 'mhinz/vim-signify'
@@ -36,10 +36,8 @@ call vundle#end()
 filetype plugin indent on
 
 " Set color scheme(s)
-colorscheme dracula
-let g:lightline = {
-  \ 'colorscheme': 'dracula',
-  \ }
+set background=dark
+colorscheme oceanic_material
 
 
 " Hide default status line
