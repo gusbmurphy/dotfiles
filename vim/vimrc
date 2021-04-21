@@ -41,11 +41,6 @@ let g:lightline = {
   \ 'colorscheme': 'dracula',
   \ }
 
-" Disable holding movement keys
-:noremap hh <nop>
-:noremap jj <nop>
-:noremap kk <nop>
-:noremap ll <nop>
 
 " Hide default status line
 set noshowmode
