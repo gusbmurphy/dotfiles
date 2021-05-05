@@ -84,7 +84,12 @@ set scrolloff=4
 set number relativenumber
 
 " Rapid editing of Vimrc
-nmap <leader>vr :sp $MYVIMRC<cr>
+if has('nvim')
+  nmap <leader>vr :sp ~/.vimrc<cr>
+else
+  nmap <leader>vr :sp $MYVIMRC<cr>
+endif
+
 nmap <leader>so :source $MYVIMRC<cr>
 
 " CoC configuration
