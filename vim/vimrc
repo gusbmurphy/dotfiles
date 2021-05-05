@@ -23,6 +23,7 @@ Plugin 'preservim/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-python/python-syntax'
 Plugin 'glepnir/oceanic-material'
+Plugin 'tpope/vim-fugitive'
 
 if has('nvim') || has('patch-8.0.902')
   Plugin 'mhinz/vim-signify'
