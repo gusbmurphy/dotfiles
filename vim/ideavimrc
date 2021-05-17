@@ -1,0 +1,5 @@
+" Set relative line numbering with absolute number for current line
+set number relativenumber
+
+" vim-commentary emulation
+set commentary
