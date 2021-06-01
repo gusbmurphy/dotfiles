@@ -3,3 +3,9 @@ set number relativenumber
 
 " vim-commentary emulation
 set commentary
+
+" IDEA Actions
+:map <leader>db <Action>(Debug)
+:map <leader>rf <Action>(ReformatCode)
+:map <leader>rn <Action>(RenameElement)
+:map <leader>cd <Action>(GotoDeclaration)
