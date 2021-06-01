@@ -22,8 +22,10 @@ Plugin 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn buil
 Plugin 'preservim/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-python/python-syntax'
-Plugin 'glepnir/oceanic-material'
+" Plugin 'glepnir/oceanic-material'
+Plugin 'dracula/vim', { 'as': 'dracula' }
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-commentary'
 
 if has('nvim') || has('patch-8.0.902')
   Plugin 'mhinz/vim-signify'
@@ -39,8 +41,9 @@ filetype plugin indent on
 let g:vim_jsx_pretty_colorful_config = 1
 
 " Set color scheme(s)
-set background=dark
-colorscheme oceanic_material
+" set background=dark
+" colorscheme oceanic_material
+colorscheme dracula
 
 " Use new regular expression engine so that syntax highlighting in TS works
 set re=0
@@ -66,8 +69,8 @@ set termguicolors
 let g:dracula_colorterm = 0
 
 " Move up and down by visible lines if current line is wrapped
-nmap j gj
-nmap k gk
+" nmap j gj
+" nmap k gk
 
 " Configure indentation
 set tabstop=2
