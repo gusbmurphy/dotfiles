@@ -22,8 +22,7 @@ Plugin 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn buil
 Plugin 'preservim/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-python/python-syntax'
-" Plugin 'glepnir/oceanic-material'
-Plugin 'dracula/vim', { 'as': 'dracula' }
+Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
 
@@ -37,13 +36,37 @@ endif
 call vundle#end()
 filetype plugin indent on
 
+"Use 24-bit (true-color) mode in Vim/Neovim when outside tmux.
+"If you're using tmux version 2.2 or later, you can remove the outermost $TMUX check and use tmux's 24-bit color support
+"(see < http://sunaku.github.io/tmux-24bit-color.html#usage > for more information.)
+if (empty($TMUX))
+  if (has("nvim"))
+    "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+  endif
+  "For Neovim > 0.1.5 and Vim > patch 7.4.1799 < https://github.com/vim/vim/commit/61be73bb0f965a895bfb064ea3e55476ac175162 >
+  "Based on Vim patch 7.4.1770 (`guicolors` option) < https://github.com/vim/vim/commit/8a633e3427b47286869aa4b96f2bfc1fe65b25cd >
+  " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
+  if (has("termguicolors"))
+    set termguicolors
+  endif
+endif
+
+" Enable syntax highlighting
+syntax enable
+
 " Enable colorful mode for JSX syntax highlighting
 let g:vim_jsx_pretty_colorful_config = 1
 
-" Set color scheme(s)
-" set background=dark
-" colorscheme oceanic_material
-colorscheme dracula
+let g:onedark_terminal_italics = 1
+
+" Set color scheme
+colorscheme onedark
+
+" Set lightline colorscheme
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
 
 " Use new regular expression engine so that syntax highlighting in TS works
 set re=0
@@ -64,10 +87,6 @@ set wildmenu
 " Let vim-python/python-syntax do its thing
 let g:python_highlight_all = 1
 
-" To get Dracula colors in iTerm2
-set termguicolors
-let g:dracula_colorterm = 0
-
 " Move up and down by visible lines if current line is wrapped
 " nmap j gj
 " nmap k gk
@@ -76,9 +95,6 @@ let g:dracula_colorterm = 0
 set tabstop=2
 set shiftwidth=2
 set expandtab
-
-" Enable syntax highlighting
-syntax enable
 
 " Keep at least 4 lines below cursor
 set scrolloff=4
