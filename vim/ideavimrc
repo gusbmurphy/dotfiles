@@ -9,3 +9,9 @@ set commentary
 :map <leader>rf <Action>(ReformatCode)
 :map <leader>rn <Action>(RenameElement)
 :map <leader>cd <Action>(GotoDeclaration)
+
+" Kinesis bindings
+" Press i to enter insert mode, and jk or kj to exit.
+:imap jk <Esc>
+:imap kj <Esc>
+

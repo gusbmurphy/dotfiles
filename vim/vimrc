@@ -142,5 +142,10 @@ function! s:show_documentation()
   endif
 endfunction
 
+" Kinesis bindings
+" Press i to enter insert mode, and jk or kj to exit.
+:imap jk <Esc>
+:imap kj <Esc>
+
 " Prettier command
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
