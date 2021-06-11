@@ -1,8 +1,9 @@
 " Set relative line numbering with absolute number for current line
 set number relativenumber
 
-" vim-commentary emulation
+" plugin emulation
 set commentary
+set NERDTree
 
 " IDEA Actions
 :map <leader>db <Action>(Debug)
@@ -15,3 +16,6 @@ set commentary
 :imap jk <Esc>
 :imap kj <Esc>
 
+" Move horizontal movement keys to l and ;
+" noremap l h
+" noremap ; l

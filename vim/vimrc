@@ -147,5 +147,9 @@ endfunction
 :imap jk <Esc>
 :imap kj <Esc>
 
+" Move horizontal movement keys to l and ;
+" noremap l h
+" noremap ; l
+
 " Prettier command
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
