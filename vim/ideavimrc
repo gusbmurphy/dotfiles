@@ -1,6 +1,9 @@
 " Set relative line numbering with absolute number for current line
 set number relativenumber
 
+" Keep at least 6 lines below cursor
+set scrolloff=6
+
 " plugin emulation
 set commentary
 set NERDTree

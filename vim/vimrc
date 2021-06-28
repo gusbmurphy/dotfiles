@@ -96,8 +96,8 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 
-" Keep at least 4 lines below cursor
-set scrolloff=4
+" Keep at least 6 lines below cursor
+set scrolloff=6
 
 " Set relative line numbering with absolute number for current line
 set number relativenumber
@@ -119,6 +119,7 @@ let g:coc_global_extensions = [
       \ 'coc-eslint',
       \ 'coc-tsserver',
       \ 'coc-styled-components',
+      \ 'coc-phpls',
       \ 'coc-python'
       \ ]
 
@@ -153,3 +154,6 @@ endfunction
 
 " Prettier command
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+
+" Configure comment character for SQL
+autocmd FileType sql setlocal commentstring=-- %s
