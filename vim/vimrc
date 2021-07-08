@@ -25,6 +25,8 @@ Plugin 'vim-python/python-syntax'
 Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
+Plugin 'mattn/emmet-vim'
+Plugin 'turbio/bracey.vim'
 
 if has('nvim') || has('patch-8.0.902')
   Plugin 'mhinz/vim-signify'
@@ -111,6 +113,9 @@ endif
 
 nmap <leader>so :source $MYVIMRC<cr>
 
+" Prettier formatting
+nmap <leader>rf :Prettier<cr>
+
 " CoC configuration
 let g:coc_global_extensions = [
       \ 'coc-json',
@@ -120,6 +125,8 @@ let g:coc_global_extensions = [
       \ 'coc-tsserver',
       \ 'coc-styled-components',
       \ 'coc-phpls',
+      \ 'coc-html',
+      \ 'coc-css',
       \ 'coc-python'
       \ ]
 
@@ -157,3 +164,10 @@ command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 " Configure comment character for SQL
 autocmd FileType sql setlocal commentstring=-- %s
+
+" Enable emmet for only HTML and CSS
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
+" Redefine emmet trigger key
+let g:user_emmet_leader_key=','
