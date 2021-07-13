@@ -25,6 +25,7 @@ Plugin 'vim-python/python-syntax'
 Plugin 'joshdick/onedark.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
 Plugin 'turbio/bracey.vim'
 
