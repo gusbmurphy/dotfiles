@@ -28,6 +28,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-surround'
 Plugin 'mattn/emmet-vim'
 Plugin 'turbio/bracey.vim'
+Plugin 'Yggdroot/indentLine'
 
 if has('nvim') || has('patch-8.0.902')
   Plugin 'mhinz/vim-signify'
