@@ -118,6 +118,9 @@ nmap <leader>so :source $MYVIMRC<cr>
 " Prettier formatting
 nmap <leader>rf :Prettier<cr>
 
+" NERDTree leader key
+nmap <leader>n :NERDTree<cr>
+
 " CoC configuration
 let g:coc_global_extensions = [
       \ 'coc-json',
