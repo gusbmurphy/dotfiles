@@ -32,6 +32,7 @@ Plugin 'Yggdroot/indentLine'
 Plugin 'adelarsq/vim-matchit'
 Plugin 'junegunn/fzf', { 'dir': '~/opt/fzf' }
 Plugin 'junegunn/fzf.vim'
+Plugin 'catppuccin/nvim', { 'as': 'catppuccin' }
 
 if has('nvim') || has('patch-8.0.902')
   Plugin 'mhinz/vim-signify'
@@ -68,12 +69,10 @@ let g:vim_jsx_pretty_colorful_config = 1
 let g:onedark_terminal_italics = 1
 
 " Set color scheme
-colorscheme onedark
+colorscheme catppuccin-latte
 
 " Set lightline colorscheme
-let g:lightline = {
-  \ 'colorscheme': 'onedark',
-  \ }
+let g:lightline = { 'colorscheme': 'catppuccin' }
 
 " Use new regular expression engine so that syntax highlighting in TS works
 set re=0
