@@ -30,6 +30,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'turbio/bracey.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'adelarsq/vim-matchit'
+Plugin 'junegunn/fzf', { 'dir': '~/opt/fzf' }
+Plugin 'junegunn/fzf.vim'
 
 if has('nvim') || has('patch-8.0.902')
   Plugin 'mhinz/vim-signify'
