@@ -91,6 +91,10 @@ set wildignore+=**/node_modules/**
 " Enable nice menu for tab completion file names
 set wildmenu
 
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 " Let vim-python/python-syntax do its thing
 let g:python_highlight_all = 1
 
