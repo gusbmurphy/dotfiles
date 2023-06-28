@@ -183,6 +183,5 @@ autocmd FileType html,css EmmetInstall
 " Redefine emmet trigger key
 let g:user_emmet_leader_key=','
 
-" Override concealLevel set by indentLine.vim (why is it like this?)
-let g:conceallevel=0
-let g:concealcursor=0
+" Override concealLevel set by indentLine.vim
+let g:vim_json_conceal=0
