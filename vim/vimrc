@@ -69,7 +69,7 @@ let g:vim_jsx_pretty_colorful_config = 1
 let g:onedark_terminal_italics = 1
 
 " Set color scheme
-colorscheme catppuccin-latte
+colorscheme catppuccin
 
 " Set lightline colorscheme
 let g:lightline = { 'colorscheme': 'catppuccin' }
