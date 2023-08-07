@@ -138,7 +138,8 @@ let g:coc_global_extensions = [
       \ 'coc-phpls',
       \ 'coc-html',
       \ 'coc-css',
-      \ 'coc-python'
+      \ 'coc-python',
+      \ 'coc-rust-analyzer'
       \ ]
 
 " CoC actions
